@@ -1,0 +1,13 @@
+socialTitle: Mr.
+firstName: Jim
+lastName: Bean
+email: jim.bean@test.com
+password: admin1
+birthdate: 02/20/1988
+address: TestAddress
+zipCode: 33444
+city: Test
+state: Connecticut
+invoiceAddress: TestAddress
+invoiceZipCode: 33444
+invoiceCity: Test
