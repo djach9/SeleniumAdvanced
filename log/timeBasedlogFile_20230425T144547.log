@@ -1,0 +1,7 @@
+3306 [main] INFO  tests.BaseTest.class - Driver is opened
+4026 [main] INFO  tests.BaseTest.class - Adding product to cart
+5765 [main] INFO  tests.BaseTest.class - Adding product to cart
+7136 [main] INFO  tests.BaseTest.class - Checking total value.Total value is 47.90
+7765 [main] INFO  tests.BaseTest.class - Checking total value after removing the first product.Value: 18.90
+8420 [main] INFO  tests.BaseTest.class - Empty cart was displayed
+8423 [main] INFO  tests.BaseTest.class - Driver is closed

@@ -1,0 +1,10 @@
+3901 [main] INFO  tests.BaseTest.class - Driver is opened
+3938 [main] INFO  tests.BaseTest.class - Start order process test
+4211 [main] INFO  tests.BaseTest.class - User clicked on Sign In button
+4832 [main] INFO  tests.BaseTest.class - User logged in as registered user
+5196 [main] INFO  tests.BaseTest.class - User navigated to home page
+5586 [main] INFO  tests.BaseTest.class - User opened The Best Is Yet Poster product page
+6303 [main] INFO  tests.BaseTest.class - User added product to cart
+6539 [main] INFO  tests.BaseTest.class - User proceeded to checkout from popup window
+6817 [main] INFO  tests.BaseTest.class - User proceeded to checkout from cart page
+17957 [main] INFO  tests.BaseTest.class - Driver is closed

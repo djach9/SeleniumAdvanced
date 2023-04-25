@@ -67,7 +67,7 @@ public class CheckoutPage extends BasePage {
         sendKeys(addressInput, getUserData().getInvoiceAddress());
         sendKeys(postCodeInput, getUserData().getInvoiceZipCode());
         sendKeys(cityInput, getUserData().getInvoiceCity());
-        new Select(stateSelect).selectByVisibleText("Connecticut");
+        new Select(stateSelect).selectByVisibleText(getUserData().getState());
         click(invoiceContinueButton);
         return this;
     }

@@ -1,0 +1,19 @@
+2362 [main] INFO  tests.BaseTest.class - Driver is opened
+2396 [main] INFO  tests.BaseTest.class - Start order process test
+2634 [main] INFO  tests.BaseTest.class - User clicked on Sign In button
+3226 [main] INFO  tests.BaseTest.class - User logged in as registered user
+3555 [main] INFO  tests.BaseTest.class - User navigated to home page
+3948 [main] INFO  tests.BaseTest.class - User opened The Best Is Yet Poster product page
+4676 [main] INFO  tests.BaseTest.class - User added product to cart
+4935 [main] INFO  tests.BaseTest.class - User proceeded to checkout from popup window
+5191 [main] INFO  tests.BaseTest.class - User proceeded to checkout from cart page
+7339 [main] INFO  tests.BaseTest.class - User submitted the order
+7522 [main] INFO  tests.BaseTest.class - User navigated to user account page
+7799 [main] INFO  tests.BaseTest.class - User opened order history page
+8098 [main] INFO  tests.BaseTest.class - Today's date matches order details page date
+8121 [main] INFO  tests.BaseTest.class - Order status is 'Awaiting check payment'
+8144 [main] INFO  tests.BaseTest.class - Total price matches order details page total order value
+8229 [main] INFO  tests.BaseTest.class - Delivery address details match user data
+8296 [main] INFO  tests.BaseTest.class - Invoice address details match user data
+8296 [main] INFO  tests.BaseTest.class - Order process test finished
+8298 [main] INFO  tests.BaseTest.class - Driver is closed

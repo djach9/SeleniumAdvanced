@@ -5,53 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="988708f8-c4e1-4026-8bcf-b3d6b17f11b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/ConfigurationRetriever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/ProductData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/enums/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/factories/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/factories/UserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/basic/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/basic/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/basic/TopBasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/cart/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/CheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/ConfirmationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/order/OrderDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/order/OrderHistoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/CategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/FiltersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/PopUpProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/ProductGridPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/ProductsCategoriesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/products/SearchResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/SignInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/UserAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testModels/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testModels/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/configuration.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/productData.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/userData.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseTests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseTests/Pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cartTests/CartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/checkoutTests/CheckoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/productTests/CategoriesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/searchTests/FiltersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/searchTests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/checkout/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testModels/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testModels/Product.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +55,7 @@
       <recent name="configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartTest.shouldCheckRemovingProductsFromCart">
+  <component name="RunManager" selected="JUnit.CheckoutTest">
     <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAdvanced" />
       <extension name="coverage">
@@ -130,16 +87,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoriesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAdvanced" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="productTests.*" />
+          <option name="PATTERN" value="checkoutTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="productTests" />
-      <option name="MAIN_CLASS_NAME" value="productTests.CategoriesTest" />
+      <option name="PACKAGE_NAME" value="checkoutTests" />
+      <option name="MAIN_CLASS_NAME" value="checkoutTests.CheckoutTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckoutTest" />
         <item itemvalue="JUnit.CartTest.shouldCheckRemovingProductsFromCart" />
         <item itemvalue="JUnit.SearchTest.shouldCheckSearchField" />
         <item itemvalue="JUnit.FiltersTest" />
         <item itemvalue="JUnit.CartTest" />
-        <item itemvalue="JUnit.CategoriesTest" />
       </list>
     </recent_temporary>
   </component>
