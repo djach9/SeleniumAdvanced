@@ -10,20 +10,15 @@ import static helpers.Helper.getRandom;
 
 public class UserFactory {
 
-    private static User registeredUser;
-
     public static User getAlreadyRegisteredUser() {
-        if (registeredUser == null) {
-            registeredUser = new User.UserBuilder()
-                    .socialTitle(getUserData().getSocialTitle())
-                    .firstName(getUserData().getFirstName())
-                    .lastName(getUserData().getLastName())
-                    .email(getUserData().getEmail())
-                    .password(getUserData().getPassword())
-                    .birthdate(getUserData().getBirthdate())
-                    .build();
-        }
-        return registeredUser;
+        return new User.UserBuilder()
+                .socialTitle(getUserData().getSocialTitle())
+                .firstName(getUserData().getFirstName())
+                .lastName(getUserData().getLastName())
+                .email(getUserData().getEmail())
+                .password(getUserData().getPassword())
+                .birthdate(getUserData().getBirthdate())
+                .build();
     }
 
     public static User getRandomUser() {

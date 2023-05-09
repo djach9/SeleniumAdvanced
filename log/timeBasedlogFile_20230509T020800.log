@@ -1,0 +1,4 @@
+2713 [main] INFO  tests.BaseTest.class - Driver is opened
+2853 [main] INFO  tests.BaseTest.class - Driver is closed
+4351 [main] INFO  tests.BaseTest.class - Driver is opened
+4765 [main] INFO  tests.BaseTest.class - Driver is closed

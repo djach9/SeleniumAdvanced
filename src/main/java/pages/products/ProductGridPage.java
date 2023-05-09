@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.basic.BasePage;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import static configuration.ConfigurationRetriever.getProductData;
@@ -22,8 +24,12 @@ public class ProductGridPage extends BasePage {
     @FindBy(css = "[aria-label='Price']")
     private List<WebElement> prices;
 
-    public List<WebElement> getProductPrices() {
-        return prices;
+    public List<String> getProductPricesAsString() {
+        List<String> pricesAsString = new ArrayList<>();
+        for (WebElement priceElement : prices) {
+            pricesAsString.add(priceElement.getText());
+        }
+        return pricesAsString;
     }
 
     public String getNameOfRandomProductFromGrid() {
@@ -38,13 +44,17 @@ public class ProductGridPage extends BasePage {
         return String.valueOf(products.size());
     }
 
-    private ProductPage openProductByName(String productName) {
-        products.stream().filter(webelement -> webelement.getText().equals(productName)).toList().get(0).click();
-        return new ProductPage(driver);
-    }
+    public ProductPage openProductByName(String productName) {
+        if (products.isEmpty()) {
+            throw new RuntimeException("No products found on the page");
+        }
 
-    public ProductPage openTheBestIsYetPoster() {
-        openProductByName(getProductData().getProduct2Name());
+        WebElement productElement = products.stream()
+                .filter(webelement -> webelement.getText().equals(productName))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Product not found: " + productName));
+
+        productElement.click();
         return new ProductPage(driver);
     }
 

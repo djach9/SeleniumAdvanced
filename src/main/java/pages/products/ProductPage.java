@@ -43,22 +43,25 @@ public class ProductPage extends BasePage {
     }
 
     public PopUpProductPage addProductToCart(Product product) {
-        product.setProductName(productName.getText());
-        product.setProductPrice(getPrice(productPrice));
-        product.setQuantity(Integer.parseInt(productQuantityInput.getAttribute("value")));
+        setProductProperties(product);
         click(addToCartButton);
         popUpProductPage.waitForPopup();
         return new PopUpProductPage(driver);
     }
 
     public PopUpProductPage addProductToCart(Product product, Order order) {
-        product.setProductName(productName.getText());
-        product.setProductPrice(getPrice(productPrice));
-        product.setQuantity(Integer.parseInt(productQuantityInput.getAttribute("value")));
+        setProductProperties(product);
         product.setProductTotalPrice(product.getProductPrice().multiply(BigDecimal.valueOf(product.getQuantity())));
         order.addProduct(product, product.getQuantity());
         click(addToCartButton);
         popUpProductPage.waitForPopup();
         return new PopUpProductPage(driver);
     }
+
+    private void setProductProperties(Product product) {
+        product.setProductName(productName.getText());
+        product.setProductPrice(getPrice(productPrice));
+        product.setQuantity(Integer.parseInt(productQuantityInput.getAttribute("value")));
+    }
+
 }

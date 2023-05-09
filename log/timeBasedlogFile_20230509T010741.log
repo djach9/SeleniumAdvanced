@@ -1,0 +1,3 @@
+2857 [main] INFO  tests.BaseTest.class - Driver is opened
+2897 [main] INFO  tests.BaseTest.class - Start categories test
+5295 [main] INFO  tests.BaseTest.class - Driver is closed

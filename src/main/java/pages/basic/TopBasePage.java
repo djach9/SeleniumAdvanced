@@ -11,6 +11,7 @@ import pages.products.SearchResultPage;
 import pages.user.SignInPage;
 import pages.user.UserAccountPage;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static configuration.ConfigurationRetriever.getProductData;
@@ -73,15 +74,6 @@ public class TopBasePage extends BasePage {
         return this;
     }
 
-    public TopBasePage searchForTheBestIsYetItemFromFile() {
-        searchForProduct(getProductData().getProduct2Name());
-        return this;
-    }
-
-    public List<WebElement> getProductsFromDropdown() {
-        return productsFromDropdown;
-    }
-
     public List<WebElement> getProductCategories() {
         return productCategories;
     }
@@ -90,17 +82,8 @@ public class TopBasePage extends BasePage {
         return productSubcategories;
     }
 
-    public boolean doProductNamesInDropdownMatch() {
-        String expectedProductName = getProductData().getProduct1Name();
-        int count = 0;
-        By dropdownProductLocator = By.cssSelector(".ui-autocomplete");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(dropdownProductLocator));
-        for (WebElement product : productsFromDropdown) {
-            if (product.getAttribute("innerText").contains(expectedProductName)) {
-                count++;
-            }
-        }
-        return count == productsFromDropdown.size() && count != 0;
+    public List <String> getProductNamesFromDropdown() {
+        return new ArrayList<>();
     }
 
     public SearchResultPage clickSearchSubmitButton() {
@@ -114,18 +97,26 @@ public class TopBasePage extends BasePage {
         return category.getText();
     }
 
-    public CategoryPage openCategory(WebElement category) {
-        click(category);
+    public List<String> getProductCategoryNames() {
+        List<String> categoryNames = new ArrayList<>();
+        for (WebElement category : getProductCategories()) {
+            categoryNames.add(getCategoryName(category));
+        }
+        return categoryNames;
+    }
+
+    public CategoryPage openCategoryByName(String categoryName) {
+        for (int i = 0; i < getProductCategories().size(); i++) {
+            if (getProductCategories().get(i).getText().equals(categoryName)) {
+                click(getProductCategories().get(i));
+                break;
+            }
+        }
         return new CategoryPage(driver);
     }
 
     public CategoryPage openAccessoriesCategory() {
         click(accessoriesCategorySection);
-        return new CategoryPage(driver);
-    }
-
-    public CategoryPage openArtCategory() {
-        click(artCategorySection);
         return new CategoryPage(driver);
     }
 
@@ -138,16 +129,6 @@ public class TopBasePage extends BasePage {
             }
         }
         return new CategoryPage(driver);
-    }
-
-    public String getSubcategoryName(WebElement subcategory) {
-        return subcategory.getText();
-    }
-
-    public TopBasePage hoverOverCategory(WebElement category) {
-        actions.moveToElement(category).perform();
-        wait.until(ExpectedConditions.visibilityOf(popoverMenu));
-        return this;
     }
 
     public TopBasePage expandSubcategories(String subcategory) {

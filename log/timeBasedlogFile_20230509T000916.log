@@ -1,0 +1,5 @@
+2593 [main] INFO  tests.BaseTest.class - Driver is opened
+2627 [main] INFO  tests.BaseTest.class - Start filters test
+3150 [main] INFO  tests.BaseTest.class - Set price range on slider
+7052 [main] INFO  tests.BaseTest.class - Checking price within filters range
+7095 [main] INFO  tests.BaseTest.class - Driver is closed

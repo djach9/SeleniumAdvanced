@@ -38,11 +38,8 @@ public class Order {
     }
 
     public BigDecimal getTotalPrice() {
-        BigDecimal totalPrice = new BigDecimal(0);
-        for (Product product : products) {
-            totalPrice = totalPrice.add(new BigDecimal(String.valueOf(product.getProductPrice())));
-        }
-        return totalPrice;
+        return products.stream().map(product -> new BigDecimal(String.valueOf(product.getProductPrice())))
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     public BigDecimal getPriceWithShippingFee() {

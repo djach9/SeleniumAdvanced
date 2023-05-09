@@ -1,0 +1,4 @@
+4541 [main] INFO  tests.BaseTest.class - Driver is opened
+6495 [main] INFO  tests.BaseTest.class - Clicked 'Continue shopping' button.
+6533 [main] INFO  tests.BaseTest.class - Cart contains 3 product(s).
+6536 [main] INFO  tests.BaseTest.class - Driver is closed

@@ -1,0 +1,4 @@
+4487 [main] INFO  tests.BaseTest.class - Driver is opened
+4528 [main] INFO  tests.BaseTest.class - Start categories test
+4547 [main] INFO  tests.BaseTest.class - Testing category: [[ChromeDriver: chrome on WINDOWS (4c015e0ff61d1118ca0f177befc483d6)] -> xpath: //a[@data-depth='0']]
+4979 [main] INFO  tests.BaseTest.class - Driver is closed

@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.basic.BasePage;
 
+import java.math.BigDecimal;
+
 public class CategoryPage extends BasePage {
     public CategoryPage(WebDriver driver) {
         super(driver);
@@ -43,11 +45,9 @@ public class CategoryPage extends BasePage {
         wait.until(ExpectedConditions.invisibilityOf(clearFilterButton));
     }
 
-    public boolean checkIfPriceWithinFiltersRange(WebElement element) {
-        if (getBigDecimalAsDouble(productGridPage.getPrice(element)) >= getBigDecimalAsDouble(filtersPage.getLowerPriceRange())) {
-            return getBigDecimalAsDouble(productGridPage.getPrice(element)) <= getBigDecimalAsDouble(filtersPage.getUpperPriceRange());
-        } else {
-            return false;
-        }
+
+    public boolean checkIfPriceWithinFiltersRange(BigDecimal lowerRange, BigDecimal upperRange, BigDecimal productPrice) {
+        return productPrice.compareTo(lowerRange) >= 0 && productPrice.compareTo(upperRange) <= 0;
     }
+
 }

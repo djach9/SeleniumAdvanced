@@ -1,0 +1,4 @@
+6989 [main] INFO  tests.BaseTest.class - Checking price within filters range
+7050 [main] INFO  tests.BaseTest.class - Clear filters
+7673 [main] INFO  tests.BaseTest.class - Filters test completed
+7675 [main] INFO  tests.BaseTest.class - Driver is closed

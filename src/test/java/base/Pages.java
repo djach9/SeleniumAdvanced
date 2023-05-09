@@ -1,4 +1,4 @@
-package baseTests;
+package base;
 
 import org.junit.jupiter.api.BeforeEach;
 import pages.basic.HomePage;

@@ -10,6 +10,12 @@ public class ProductData {
     private String currency;
     private BigDecimal shippingFee;
 
+    public String getCategory() {
+        return category;
+    }
+
+    private String category;
+
     public String getProduct1Name() {
         return product1Name;
     }

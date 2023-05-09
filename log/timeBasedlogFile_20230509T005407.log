@@ -1,0 +1,9 @@
+3975 [main] INFO  tests.BaseTest.class - Driver is opened
+4010 [main] INFO  tests.BaseTest.class - Start categories test
+4059 [main] INFO  tests.BaseTest.class - Testing category: CLOTHES
+4503 [main] INFO  tests.BaseTest.class - Categories tested- CLOTHES
+4536 [main] INFO  tests.BaseTest.class - Testing category: ACCESSORIES
+4962 [main] INFO  tests.BaseTest.class - Categories tested- ACCESSORIES
+5001 [main] INFO  tests.BaseTest.class - Testing category: ART
+5396 [main] INFO  tests.BaseTest.class - Categories tested- ART
+5405 [main] INFO  tests.BaseTest.class - Driver is closed

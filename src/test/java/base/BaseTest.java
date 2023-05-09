@@ -1,4 +1,4 @@
-package baseTests;
+package base;
 
 import configuration.ConfigurationRetriever;
 import configuration.factories.DriverFactory;
@@ -27,7 +27,7 @@ public class BaseTest {
 
     @AfterEach
     public void tearDown() {
-      //  driver.quit();
+        driver.quit();
         logger.info("Driver is closed");
 
     }

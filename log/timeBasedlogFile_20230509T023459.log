@@ -1,0 +1,3 @@
+2377 [main] INFO  tests.BaseTest.class - Driver is opened
+2403 [main] INFO  tests.BaseTest.class - Adding products to cart...
+21344 [main] INFO  tests.BaseTest.class - Driver is closed

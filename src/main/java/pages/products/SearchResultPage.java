@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.basic.BasePage;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SearchResultPage extends BasePage {
@@ -16,13 +17,13 @@ public class SearchResultPage extends BasePage {
     @FindBy(css = ".product-title")
     private List<WebElement> productTitles;
 
-    public boolean isPresentInSearchResults(String productName) {
+    public List<String> getProductNamesFromSearchResults() {
+        List<String> productNames = new ArrayList<>();
         for (WebElement product : productTitles) {
-            if (product.getAttribute("innerText").contains(productName)) {
-                return true;
-            }
+            productNames.add(product.getAttribute("innerText"));
         }
-        return false;
+        return productNames;
     }
+
 }
 
